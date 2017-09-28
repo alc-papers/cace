@@ -1,0 +1,25 @@
+\documentclass[oneside,a4paper,12pt]{report}
+\usepackage{fontspec}
+\usepackage[english]{babel}
+\usepackage{csquotes}
+\usepackage[nottoc]{tocbibind}
+\usepackage{setspace}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[
+backend=biber,
+style=alphabetic,
+sorting=ynt
+]{biblatex}
+\addbibresource{mybib.bib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%MAIN BODY AND TITLE PAGE%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\include{title}
+\tableofcontents
+\include{text}
+\end{document}
